@@ -1,0 +1,17 @@
+/Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.Infrastructure/bin/Debug/net6.0/ApartmentRental.Infrastructure.deps.json
+/Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.Infrastructure/bin/Debug/net6.0/ApartmentRental.Infrastructure.dll
+/Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.Infrastructure/bin/Debug/net6.0/ApartmentRental.Infrastructure.pdb
+/Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.Infrastructure/bin/Debug/net6.0/ApartmentRental.Core.dll
+/Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.Infrastructure/bin/Debug/net6.0/ApartmentRental.Core.pdb
+/Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.Infrastructure/obj/Debug/net6.0/ApartmentRental.Infrastructure.csproj.AssemblyReference.cache
+/Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.Infrastructure/obj/Debug/net6.0/ApartmentRental.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.Infrastructure/obj/Debug/net6.0/ApartmentRental.Infrastructure.AssemblyInfoInputs.cache
+/Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.Infrastructure/obj/Debug/net6.0/ApartmentRental.Infrastructure.AssemblyInfo.cs
+/Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.Infrastructure/obj/Debug/net6.0/ApartmentRental.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.Infrastructure/obj/Debug/net6.0/ApartmentRental.Infrastructure.csproj.CopyComplete
+/Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.Infrastructure/obj/Debug/net6.0/ApartmentRental.Infrastructure.dll
+/Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.Infrastructure/obj/Debug/net6.0/ApartmentRental.Infrastructure.pdb
+/Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.Infrastructure/obj/Debug/net6.0/ref/ApartmentRental.Infrastructure.dll
+/Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.Infrastructure/bin/Debug/net6.0/ApartmentRental.Infrastructure.runtimeconfig.json
+/Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.Infrastructure/obj/Debug/net6.0/ApartmentRental.Infrastructure.genruntimeconfig.cache
+/Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.Infrastructure/bin/Debug/net6.0/ref/ApartmentRental.Infrastructure.dll
