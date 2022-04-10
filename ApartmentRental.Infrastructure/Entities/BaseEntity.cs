@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ApartmentRental.Core.Entities;
+namespace ApartmentRental.Infrastructure.Entities;
 
 public class BaseEntity
 {
