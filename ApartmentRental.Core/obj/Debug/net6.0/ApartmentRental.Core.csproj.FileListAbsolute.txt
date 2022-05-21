@@ -9,4 +9,7 @@
 /Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.Core/obj/Debug/net6.0/ApartmentRental.Core.dll
 /Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.Core/obj/Debug/net6.0/ApartmentRental.Core.pdb
 /Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.Core/obj/Debug/net6.0/ref/ApartmentRental.Core.dll
-/Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.Core/bin/Debug/net6.0/ref/ApartmentRental.Core.dll
+/Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.Core/bin/Debug/net6.0/ApartmentRental.Infrastructure.dll
+/Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.Core/bin/Debug/net6.0/ApartmentRental.Infrastructure.pdb
+/Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.Core/obj/Debug/net6.0/ApartmentRental.Core.csproj.CopyComplete
+/Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.Core/obj/Debug/net6.0/refint/ApartmentRental.Core.dll

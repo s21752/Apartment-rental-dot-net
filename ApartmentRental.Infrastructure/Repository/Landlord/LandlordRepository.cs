@@ -41,6 +41,16 @@ public class LandlordRepository : ILandlordRepository
         throw new EntityNotFoundException();
     }
 
+    public async Task<Entities.Landlord> CreateAndGetAsync(Entities.Landlord landlord)
+    {
+        landlord.DateOfCreation = DateTime.UtcNow;
+        landlord.DateOfUpdate = DateTime.UtcNow;
+        await _mainContext.AddAsync(landlord);
+        await _mainContext.SaveChangesAsync();
+
+        return landlord;
+    }
+
     public async Task AddAsync(Entities.Landlord entity)
     {
         var existingLandlord = _mainContext.Landlord.SingleOrDefault(x => x.Id == entity.Id || (

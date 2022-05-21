@@ -40,6 +40,16 @@ public class AccountRepository : IAccountRepository
         throw new EntityNotFoundException();
     }
 
+    public async Task<Entities.Account> CreateAndGetAsync(Entities.Account account)
+    {
+        account.DateOfCreation = DateTime.UtcNow;
+        account.DateOfUpdate = DateTime.UtcNow;
+        await _mainContext.AddAsync(account);
+        await _mainContext.SaveChangesAsync();
+
+        return account;
+    }
+
     public async Task AddAsync(Entities.Account entity)
     {
         var existingAccount = _mainContext.Account.SingleOrDefault(x => x.Id == entity.Id || (

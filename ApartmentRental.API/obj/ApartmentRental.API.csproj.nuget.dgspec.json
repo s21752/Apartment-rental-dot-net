@@ -26,6 +26,9 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "/Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.Core/ApartmentRental.Core.csproj": {
+                "projectPath": "/Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.Core/ApartmentRental.Core.csproj"
+              },
               "/Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.Infrastructure/ApartmentRental.Infrastructure.csproj": {
                 "projectPath": "/Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.Infrastructure/ApartmentRental.Infrastructure.csproj"
               }
@@ -89,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/Cellar/dotnet/6.0.103/libexec/sdk/6.0.103/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/cezarygraban/.dotnet/sdk/6.0.201/RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -114,7 +117,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.Infrastructure/ApartmentRental.Infrastructure.csproj": {
+                "projectPath": "/Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.Infrastructure/ApartmentRental.Infrastructure.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -141,7 +148,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/Cellar/dotnet/6.0.103/libexec/sdk/6.0.103/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/cezarygraban/.dotnet/sdk/6.0.201/RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -166,11 +173,7 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {
-              "/Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.Core/ApartmentRental.Core.csproj": {
-                "projectPath": "/Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.Core/ApartmentRental.Core.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -219,7 +222,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/Cellar/dotnet/6.0.103/libexec/sdk/6.0.103/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/cezarygraban/.dotnet/sdk/6.0.201/RuntimeIdentifierGraph.json"
         }
       }
     }

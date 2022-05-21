@@ -8,7 +8,6 @@
     ".NETCoreApp,Version=v6.0": {
       "ApartmentRental.Infrastructure/1.0.0": {
         "dependencies": {
-          "ApartmentRental.Core": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.3",
           "Microsoft.EntityFrameworkCore.Design": "6.0.3",
           "Microsoft.EntityFrameworkCore.Sqlite": "6.0.3",
@@ -366,11 +365,6 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0",
           "System.Text.Encodings.Web": "6.0.0"
         }
-      },
-      "ApartmentRental.Core/1.0.0": {
-        "runtime": {
-          "ApartmentRental.Core.dll": {}
-        }
       }
     }
   },
@@ -596,11 +590,6 @@
       "sha512": "sha512-zaJsHfESQvJ11vbXnNlkrR46IaMULk/gHxYsJphzSF+07kTjPHv+Oc14w6QEOfo3Q4hqLJgStUaYB9DBl0TmWg==",
       "path": "system.text.json/6.0.0",
       "hashPath": "system.text.json.6.0.0.nupkg.sha512"
-    },
-    "ApartmentRental.Core/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     }
   }
 }

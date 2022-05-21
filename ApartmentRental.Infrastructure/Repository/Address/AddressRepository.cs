@@ -13,6 +13,27 @@ public class AddressRepository : IAddressRepository
         _mainContext = mainContext;
     }
 
+    public async Task<Entities.Address> CreateAndGetAsync(Entities.Address address)
+    {
+        address.DateOfCreation = DateTime.UtcNow;
+        address.DateOfUpdate = DateTime.UtcNow;
+        await _mainContext.AddAsync(address);
+        await _mainContext.SaveChangesAsync();
+
+        return address;
+    }
+
+    public async Task<int> GetAddressIdByItsAttributesAsync(string country, string city, string zipCode, string street,
+        string buildingNumber,
+        string apartmentNumber)
+    {
+        var address = await _mainContext.Address.FirstOrDefaultAsync(x =>
+            x.Country == country && x.City == city && x.ZipCode == zipCode && x.Street == street &&
+            x.BuildingNumber == buildingNumber && x.HomeNumber == apartmentNumber);
+
+        return address?.Id ?? 0;
+    }
+
     public async Task<IEnumerable<Entities.Address>> GetAllAsync()
     {
         var addresses = await _mainContext.Address.ToListAsync();
@@ -47,7 +68,7 @@ public class AddressRepository : IAddressRepository
         {
             throw new EntityAlreadyExistingException();
         }
-        
+
         entity.DateOfCreation = DateTime.UtcNow;
         await _mainContext.AddAsync(entity);
         await _mainContext.SaveChangesAsync();

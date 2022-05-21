@@ -472,16 +472,6 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
-      },
-      "ApartmentRental.Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/ApartmentRental.Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ApartmentRental.Core.dll": {}
-        }
       }
     }
   },
@@ -1166,16 +1156,10 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
-    },
-    "ApartmentRental.Core/1.0.0": {
-      "type": "project",
-      "path": "../ApartmentRental.Core/ApartmentRental.Core.csproj",
-      "msbuildProject": "../ApartmentRental.Core/ApartmentRental.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "ApartmentRental.Core >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.3",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.3",
       "Microsoft.EntityFrameworkCore.Sqlite >= 6.0.3",
@@ -1206,11 +1190,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "/Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.Core/ApartmentRental.Core.csproj": {
-              "projectPath": "/Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.Core/ApartmentRental.Core.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -1259,7 +1239,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/Cellar/dotnet/6.0.103/libexec/sdk/6.0.103/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/Users/cezarygraban/.dotnet/sdk/6.0.201/RuntimeIdentifierGraph.json"
       }
     }
   }

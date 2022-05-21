@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DD6Gv4IjbT63AqhDN7gEUII7sZXcJi7oPgMJVSMh0LstonhkzX8Rk6tpgm9N8MemrS+4kqokzDrk65/F5reXXw==",
+  "dgSpecHash": "cPyVZseZDTurn1FsE1HU0iZC+eQzirwxyl6xwX3qlKGhZLMYUyS29zuthshnYNMLLpFuFQ1ukTXL1eTz9a29AQ==",
   "success": true,
   "projectFilePath": "/Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.Infrastructure/ApartmentRental.Infrastructure.csproj",
   "expectedPackageFiles": [
