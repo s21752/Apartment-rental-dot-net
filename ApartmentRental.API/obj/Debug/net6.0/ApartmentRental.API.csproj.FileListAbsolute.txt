@@ -83,4 +83,4 @@
 /Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.API/bin/Debug/net6.0/ApartmentRental.Infrastructure.dll
 /Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.API/bin/Debug/net6.0/ApartmentRental.Infrastructure.pdb
 /Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.API/bin/Debug/net6.0/ApartmentRental.Core.pdb
-/Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.API/bin/Debug/net6.0/ref/ApartmentRental.API.dll
+/Users/cezarygraban/RiderProjects/ApartmentRental.API/ApartmentRental.API/obj/Debug/net6.0/refint/ApartmentRental.API.dll

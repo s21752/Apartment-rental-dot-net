@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "ApartmentRental.API/1.0.0": {
         "dependencies": {
+          "ApartmentRental.Core": "1.0.0",
           "ApartmentRental.Infrastructure": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.3",
           "Microsoft.EntityFrameworkCore.Design": "6.0.3",
@@ -657,13 +658,15 @@
         }
       },
       "ApartmentRental.Core/1.0.0": {
+        "dependencies": {
+          "ApartmentRental.Infrastructure": "1.0.0"
+        },
         "runtime": {
           "ApartmentRental.Core.dll": {}
         }
       },
       "ApartmentRental.Infrastructure/1.0.0": {
         "dependencies": {
-          "ApartmentRental.Core": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.3",
           "Microsoft.EntityFrameworkCore.Sqlite": "6.0.3"
         },

@@ -50,7 +50,6 @@ public class ApartmentRepository : IApartmentRepository
         var existingApartment = _mainContext.Apartment.SingleOrDefault(x => x.Id == entity.Id || (
             x.Address == entity.Address
             && x.Floor == entity.Floor
-            && x.Images.Equals(entity.Images)
             && x.Landlord == entity.Landlord
             && x.Tenant == entity.Tenant
             && x.HasElevator == entity.HasElevator
@@ -65,6 +64,8 @@ public class ApartmentRepository : IApartmentRepository
         }
         
         entity.DateOfCreation = DateTime.UtcNow;
+        entity.DateOfUpdate = DateTime.UtcNow;
+
         await _mainContext.AddAsync(entity);
         await _mainContext.SaveChangesAsync();
     }

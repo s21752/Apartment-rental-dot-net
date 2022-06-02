@@ -29,7 +29,10 @@ public class MainContext : DbContext
             .HasMany(x => x.Images)
             .WithOne(x => x.Apartment)
             .OnDelete(DeleteBehavior.Cascade);
-    
+
+        modelBuilder.Entity<Apartment>()
+            .HasOne(x => x.Address);
+        
         modelBuilder.Entity<Landlord>()
             .HasMany(x => x.Apartments)
             .WithOne(x => x.Landlord)

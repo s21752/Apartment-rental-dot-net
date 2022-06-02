@@ -2,7 +2,6 @@ using ApartmentRental.Core.DTO;
 using ApartmentRental.Infrastructure.Entities;
 using ApartmentRental.Infrastructure.Repository.Account;
 using ApartmentRental.Infrastructure.Repository.Address;
-using ApartmentRental.Infrastructure.Repository.Apartment;
 using ApartmentRental.Infrastructure.Repository.Landlord;
 
 namespace ApartmentRental.Core.Services;
@@ -11,6 +10,16 @@ public class LandLordService : ILandLordService
 {
     private readonly IAddressService _addressService;
     private readonly ILandlordRepository _landlordRepository;
+
+    public LandLordService(IAddressService addressService, ILandlordRepository landlordRepository, IAccountRepository accountRepository, IAddressRepository addressRepository, IApartmentService apartmentService)
+    {
+        _addressService = addressService;
+        _landlordRepository = landlordRepository;
+        _accountRepository = accountRepository;
+        _addressRepository = addressRepository;
+        _apartmentService = apartmentService;
+    }
+
     private readonly IAccountRepository _accountRepository;
     private readonly IAddressRepository _addressRepository;
     private readonly IApartmentService _apartmentService;
@@ -20,12 +29,9 @@ public class LandLordService : ILandLordService
         var landLordAddressId = await _addressService.GetAddressIdOrCreateAsync(landLordCreationRequestDto.Country,
             landLordCreationRequestDto.City, landLordCreationRequestDto.ZipCode, landLordCreationRequestDto.Street,
             landLordCreationRequestDto.BuildingNumber, landLordCreationRequestDto.HomeNumber);
-
-        var landLordAddress = await _addressRepository.GetByIdAsync(landLordAddressId);
-
+        
         var newLandLordAccount = await _accountRepository.CreateAndGetAsync(new Account
         {
-            Address = landLordAddress,
             AddressId = landLordAddressId,
             Email = landLordCreationRequestDto.MailAddress,
             IsAccountActive = true,
@@ -36,8 +42,7 @@ public class LandLordService : ILandLordService
 
         var newLandlord = await _landlordRepository.CreateAndGetAsync(new Landlord
         {
-            Account = newLandLordAccount,
-            AccountId = newLandLordAccount.Id,
+            AccountId = newLandLordAccount.Id
         });
 
         await _apartmentService.AddNewApartmentToExistingLandLordAsync(new ApartmentCreationRequestDto(

@@ -1,5 +1,6 @@
 using ApartmentRental.Core.DTO;
 using ApartmentRental.Infrastructure.Entities;
+using ApartmentRental.Infrastructure.Exceptions;
 using ApartmentRental.Infrastructure.Repository.Apartment;
 using ApartmentRental.Infrastructure.Repository.Landlord;
 
@@ -36,6 +37,11 @@ public class ApartmentService : IApartmentService
     {
         var landlord = await _landlordRepository.GetByIdAsync(dto.LandLordId);
 
+        if (landlord == null)
+        {
+            throw new EntityNotFoundException();
+        }
+
         var addressId = await _addressService.GetAddressIdOrCreateAsync(dto.Country, dto.City, dto.ZipCode, dto.Street,
             dto.BuildingNumber, dto.ApartmentNumber);
 
@@ -43,6 +49,7 @@ public class ApartmentService : IApartmentService
         {
             AddressId = addressId,
             Floor = dto.Floor,
+            Images = new List<Image>(),
             LandlordId = landlord.Id,
             HasElevator = dto.IsElevator,
             RentPrice = dto.RentAmount,
