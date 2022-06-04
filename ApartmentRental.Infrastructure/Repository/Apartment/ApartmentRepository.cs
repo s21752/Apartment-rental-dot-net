@@ -22,7 +22,7 @@ public class ApartmentRepository : IApartmentRepository
             await _mainContext.Entry(apartment).Reference(x => x.Address).LoadAsync();
             await _mainContext.Entry(apartment).Reference(x => x.Landlord).LoadAsync();
             await _mainContext.Entry(apartment).Reference(x => x.Tenant).LoadAsync();
-            await _mainContext.Entry(apartment).Reference(x => x.Images).LoadAsync();
+            await _mainContext.Entry(apartment).Collection(x => x.Images).LoadAsync();
         }
 
         return apartments;
